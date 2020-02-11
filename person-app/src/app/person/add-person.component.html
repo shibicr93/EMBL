@@ -1,0 +1,26 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Person</h2>
+  <form>
+    <div class="form-group">
+      <label for="first_name">First Name:</label>
+      <input type="email" [(ngModel)]="person.first_name" placeholder="First Name" name="first_name" class="form-control" id="first_name">
+    </div>
+
+    <div class="form-group">
+      <label for="last_name">Last Name:</label>
+      <input [(ngModel)]="person.last_name" placeholder="Last Name" name="last_name" class="form-control" id="last_name">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input [(ngModel)]="person.age" placeholder="Age" name="age" class="form-control" id="age">
+    </div>
+
+    <div class="form-group">
+      <label for="favourite_colour">Favourite Colour:</label>
+      <input [(ngModel)]="person.favourite_colour" placeholder="Favourite Colour" name="favourite_colour" class="form-control" id="favourite_colour">
+    </div>
+
+    <button class="btn btn-success" (click)="createPerson()">Create</button>
+  </form>
+</div>
